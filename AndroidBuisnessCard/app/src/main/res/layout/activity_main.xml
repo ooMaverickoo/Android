@@ -30,15 +30,15 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="@dimen/line_3dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
                 android:layout_alignParentTop="true"
                 android:background="@color/light_blue" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="@dimen/line_1dp"
+                android:layout_marginTop="@dimen/margin_8dp"
                 android:background="@color/light_blue"
                 android:layout_alignParentTop="true"/>
 
@@ -84,7 +84,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/line_1dp"
                 android:background="@color/light_blue"
                 android:layout_gravity="bottom"
                 android:layout_alignParentBottom="true"/>
@@ -101,14 +101,14 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="@dimen/line_3dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
                 android:background="@color/light_blue" />
 
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/line_1dp"
                 android:background="@color/light_blue" />
 
 
@@ -142,7 +142,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/line_1dp"
                 android:layout_marginBottom="@dimen/normal_margin"
                 android:background="@color/light_blue" />
 
@@ -162,13 +162,13 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="@dimen/line_3dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
                 android:background="@color/light_blue" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/line_1dp"
                 android:background="@color/light_blue" />
 
             <LinearLayout
@@ -194,7 +194,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/line_1dp"
                     android:background="@color/light_blue" />
 
 
@@ -226,7 +226,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/line_1dp"
                     android:background="@color/light_blue" />
 
 
@@ -260,7 +260,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/line_1dp"
                     android:background="@color/light_blue" />
 
 
@@ -294,7 +294,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/line_1dp"
                     android:background="@color/light_blue" />
 
 
@@ -324,14 +324,14 @@
             <View
                 android:id="@+id/view_footer"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="@dimen/line_3dp"
                 android:background="@color/light_blue" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/line_1dp"
                 android:layout_alignParentBottom="@id/view_footer"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
                 android:background="@color/light_blue" />
 
 
@@ -346,7 +346,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
+                    android:padding="@dimen/margin_5dp"
                     android:text="@string/interested_in"
                     android:textSize="@dimen/text_size"
                     android:textColor="@color/white"
@@ -368,7 +368,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:padding="5dp"
+                    android:padding="@dimen/margin_5dp"
                     android:text="@string/project_prometheus"
                     android:textAllCaps="true"
                     android:textSize="@dimen/header_text_size"
@@ -380,7 +380,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
+                android:layout_height="@dimen/line_1dp"
                 android:layout_alignBottom="@+id/relative_layout_footer"
                 android:background="@color/light_blue" />
 
