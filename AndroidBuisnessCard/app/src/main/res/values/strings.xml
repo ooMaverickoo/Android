@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AndroidBuisnessCard</string>
+    <string name="logo_description">Weyland-Yutani mark</string>
+    <string name="image_header">Image from the earth</string>
+    <string name="header_line">Description:</string>
+    <string name="description">Weyland-Yutani is a monolithic corporation, and is often
+        referred to as simply \"The Company\" for this reason. They are the primary
+        suppliers of global technology, and hold extensive assets in space exploration,
+        mining, colonization, trade, etc., to the point of outright monopolization.
+        Their branding appears on everything from starships to space heaters and children\'s toys.</string>
+    <string name="building_better_worlds">Building better worlds</string>
+    <string name="interested_in">Are you interested in us?</string>
+    <string name="headquarters">Headquarter:</string>
+    <string name="headquarters_names">Tokyo, London, San Francisco, Sea of Tranquillity, Thedus</string>
+    <string name="website">Website:</string>
+    <string name="website_name">https://www.weylandindustries.com</string>
+    <string name="call_us">1234/567891011</string>
+    <string name="email">office@weylandindusties.com</string>
+    <string name="join_us">Join</string>
+    <string name="image_footer">Image shows a part of a future city</string>
+    <string name="project_prometheus">Project Prometheus</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_size">28sp</dimen>
+    <dimen name="header_text_size">32sp</dimen>
+    <dimen name="normal_padding">22dp</dimen>
+    <dimen name="normal_margin">22dp</dimen>
+
+
+</resources>
