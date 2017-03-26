@@ -1,388 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/backrepeat"
-    android:orientation="vertical">
+    style="@style/scroll_style">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    <LinearLayout style="@style/normal_layout_attributes">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/normal_margin">
-
+        <RelativeLayout style="@style/relative_layout_style">
 
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/background_image_standard"
                 android:contentDescription="@string/image_header"
-                android:scaleType="centerCrop"
                 android:src="@drawable/background4" />
 
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_3dp"
-                android:layout_marginBottom="@dimen/margin_5dp"
-                android:layout_alignParentTop="true"
-                android:background="@color/light_blue" />
+            <View style="@style/header_blue_line_bold" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:layout_marginTop="@dimen/margin_8dp"
-                android:background="@color/light_blue"
-                android:layout_alignParentTop="true"/>
+            <View style="@style/header_blue_line_thin" />
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-
+            <LinearLayout style="@style/normal_layout_attributes">
 
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/normal_margin"
-                    android:layout_marginLeft="@dimen/normal_margin"
-                    android:layout_marginRight="@dimen/normal_margin"
-
+                    style="@style/logo_style"
                     android:contentDescription="@string/logo_description"
-                    android:scaleType="centerInside"
                     android:src="@drawable/logo_wy_alpha" />
 
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/building_better_worlds"
-                    android:textAlignment="center"
-                    android:textAllCaps="true"
-                    android:textSize="@dimen/header_text_size"
-                    android:textColor="@color/light_grey"
-                    android:textStyle="bold"
-
-                    />
-
+                    style="@style/better_world_style"
+                    android:text="@string/building_better_worlds" />
 
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:background="@color/light_blue"
-                android:layout_gravity="bottom"
-                android:layout_alignParentBottom="true"/>
+            <View style="@style/header_blue_line_thin_bottom" />
 
         </RelativeLayout>
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/normal_margin"
-            android:layout_marginRight="@dimen/normal_margin"
-            android:orientation="vertical">
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_3dp"
-                android:layout_marginBottom="@dimen/margin_5dp"
-                android:background="@color/light_blue" />
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:background="@color/light_blue" />
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/alpha_20_light_grey"
-                android:paddingLeft="@dimen/normal_padding"
-                android:paddingRight="@dimen/normal_padding"
-                android:paddingTop="@dimen/normal_padding"
-                android:text="@string/header_line"
-                android:textSize="@dimen/header_text_size"
-                android:textColor="@color/light_blue"
-                android:textStyle="normal"
-                android:textAllCaps="true">
-
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/alpha_20_light_grey"
-                android:padding="@dimen/normal_padding"
-                android:text="@string/description"
-                android:textSize="@dimen/text_size"
-                android:textColor="@color/light_blue"
-                android:textStyle="normal">
-
-            </TextView>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:layout_marginBottom="@dimen/normal_margin"
-                android:background="@color/light_blue" />
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/backrepeat"
-            android:orientation="vertical"
-            android:paddingBottom="@dimen/normal_padding"
-            android:paddingLeft="@dimen/normal_padding"
-            android:paddingRight="@dimen/normal_padding">
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_3dp"
-                android:layout_marginBottom="@dimen/margin_5dp"
-                android:background="@color/light_blue" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:background="@color/light_blue" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/alpha_20_light_grey"
-                android:orientation="vertical">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:autoLink="map"
-                    android:drawableLeft="@drawable/ic_room_white_36dp"
-                    android:drawablePadding="@dimen/normal_padding"
-                    android:drawableStart="@drawable/ic_room_white_36dp"
-                    android:padding="@dimen/normal_padding"
-                    android:text="@string/headquarters_names"
-                    android:textSize="@dimen/text_size"
-                    android:textColor="@color/light_blue"
-                    android:textStyle="normal" />
-
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/line_1dp"
-                    android:background="@color/light_blue" />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-
-                >
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:autoLink="web"
-                    android:background="@color/alpha_20_light_grey"
-                    android:drawableLeft="@drawable/ic_web_white_36dp"
-                    android:drawablePadding="@dimen/normal_padding"
-                    android:drawableStart="@drawable/ic_web_white_36dp"
-                    android:padding="@dimen/normal_padding"
-                    android:text="@string/website_name"
-                    android:textSize="@dimen/text_size"
-                    android:textColorLink="@color/light_blue"
-                    android:textStyle="normal" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/line_1dp"
-                    android:background="@color/light_blue" />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-
-                >
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:autoLink="phone"
-                    android:background="@color/alpha_20_light_grey"
-                    android:drawableLeft="@drawable/ic_call_white_36dp"
-                    android:drawablePadding="@dimen/normal_padding"
-                    android:drawableStart="@drawable/ic_call_white_36dp"
-                    android:padding="@dimen/normal_padding"
-                    android:text="@string/call_us"
-                    android:textSize="@dimen/text_size"
-                    android:textColor="@color/light_blue"
-                    android:textColorLink="@color/light_blue"
-                    android:textStyle="normal"
-                    tools:ignore="RtlHardcoded" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/line_1dp"
-                    android:background="@color/light_blue" />
-
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-
-                >
-
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:autoLink="email"
-                    android:background="@color/alpha_20_light_grey"
-                    android:drawableLeft="@drawable/ic_email_white_36dp"
-                    android:drawablePadding="@dimen/normal_padding"
-                    android:drawableStart="@drawable/ic_email_white_36dp"
-                    android:padding="@dimen/normal_padding"
-                    android:text="@string/email"
-                    android:textSize="@dimen/text_size"
-                    android:textColorLink="@color/light_blue"
-                    android:textStyle="normal" />
-
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/line_1dp"
-                    android:background="@color/light_blue" />
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <RelativeLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/normal_margin"
+            style="@style/transparency_layout_attributes"
             android:layout_marginLeft="@dimen/normal_margin"
             android:layout_marginRight="@dimen/normal_margin">
 
+            <View style="@style/normal_blue_line_bold" />
+
+
+            <View style="@style/normal_blue_line_thin" />
+
+
+            <TextView
+                style="@style/description_style"
+                android:text="@string/header_line">
+
+
+            </TextView>
+
+            <TextView
+                style="@style/normal_text_view_attributes"
+                android:text="@string/description">
+
+
+            </TextView>
+
+            <View style="@style/normal_blue_line_thin_bottom" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout style="@style/data_text_style">
+
+
+            <View style="@style/normal_blue_line_bold" />
+
+
+            <View style="@style/normal_blue_line_thin" />
+
+
+            <LinearLayout style="@style/transparency_layout_attributes">
+
+
+                <TextView
+                    style="@style/normal_text_view_attributes"
+                    android:autoLink="map"
+                    android:drawableLeft="@drawable/ic_room_white_36dp"
+                    android:drawableStart="@drawable/ic_room_white_36dp"
+                    android:text="@string/headquarters_names" />
+
+
+                <View style="@style/normal_blue_line_thin" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/transparency_layout_attributes">
+
+
+                <TextView
+                    style="@style/normal_text_view_attributes"
+                    android:autoLink="web"
+                    android:drawableLeft="@drawable/ic_web_white_36dp"
+                    android:drawableStart="@drawable/ic_web_white_36dp"
+                    android:text="@string/website_name" />
+
+
+                <View style="@style/normal_blue_line_thin" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/transparency_layout_attributes">
+
+
+                <TextView
+                    style="@style/normal_text_view_attributes"
+                    android:autoLink="phone"
+                    android:drawableLeft="@drawable/ic_call_white_36dp"
+                    android:drawableStart="@drawable/ic_call_white_36dp"
+                    android:text="@string/call_us" />
+
+                <View style="@style/normal_blue_line_thin" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/transparency_layout_attributes">
+
+
+                <TextView
+                    style="@style/normal_text_view_attributes"
+                    android:autoLink="email"
+                    android:drawableLeft="@drawable/ic_email_white_36dp"
+                    android:drawableStart="@drawable/ic_email_white_36dp"
+                    android:text="@string/email" />
+
+
+                <View style="@style/normal_blue_line_thin_bottom" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout style="@style/relative_layout_style">
+
 
             <ImageView
-
-                android:id="@+id/relative_layout_footer"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                style="@style/background_image_standard"
                 android:contentDescription="@string/image_footer"
-                android:scaleType="centerCrop"
                 android:src="@drawable/background7" />
 
-            <View
-                android:id="@+id/view_footer"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_3dp"
-                android:background="@color/light_blue" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:layout_alignParentBottom="@id/view_footer"
-                android:layout_marginTop="@dimen/margin_8dp"
-                android:background="@color/light_blue" />
+            <View style="@style/footer_blue_line_bold" />
+
+            <View style="@style/footer_blue_line_thin" />
 
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:orientation="vertical">
+                style="@style/normal_layout_attributes"
+                android:layout_centerInParent="true">
 
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:padding="@dimen/margin_5dp"
+                    style="@style/footer_text_style_normal"
                     android:text="@string/interested_in"
-                    android:textSize="@dimen/text_size"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/text_size" />
+
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_margin="@dimen/normal_margin"
-                    android:background="@color/light_grey"
-                    android:text="@string/join_us"
-                    android:textColor="@color/colorPrimaryDark"
-
-
-                    />
+                    style="@style/button_style"
+                    android:text="@string/join_us" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:padding="@dimen/margin_5dp"
+                    style="@style/footer_text_style_header"
                     android:text="@string/project_prometheus"
                     android:textAllCaps="true"
-                    android:textSize="@dimen/header_text_size"
                     android:textColor="@color/light_blue"
-                    android:textStyle="bold" />
+                    android:textSize="@dimen/header_text_size" />
 
 
             </LinearLayout>
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/line_1dp"
-                android:layout_alignBottom="@+id/relative_layout_footer"
-                android:background="@color/light_blue" />
+                style="@style/normal_blue_line_thin"
+                android:layout_alignParentBottom="true" />
 
         </RelativeLayout>
     </LinearLayout>
