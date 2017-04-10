@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@color/transparentBlue"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_title_size"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_title" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/score_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_main"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@color/transparentBlue"
+            android:gravity="center_horizontal"
+            android:text="10"
+            android:textColor="@color/colorBlue"
+            android:textSize="80sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8dp"
+            android:layout_marginStart="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@color/transparentBlue"
+            android:gravity="center_horizontal"
+            android:text="10"
+            android:textColor="@color/colorBlue"
+            android:textSize="80sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_panel"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/status_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBlue"
+            android:gravity="center_horizontal"
+            android:text="@string/choose_your_hero"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/status_text_size" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_panel"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_2dp"
+            android:background="@color/colorBlue" />
+
+        <RelativeLayout
+            android:id="@+id/animation_panel"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/background_arena">
+
+
+            <ImageView
+                android:id="@+id/alien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/alien_hit0000" />
+
+            <ImageView
+                android:id="@+id/predator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/predator_hit0" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorBlue" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/panel_choose_hero_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/status_panel"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/panel_choose_hero_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/button_choose_alien"
+                android:layout_width="@dimen/image_portrait_size"
+                android:layout_height="@dimen/image_portrait_size"
+                android:layout_margin="@dimen/normal_margin"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:onClick="buttonChooseAlien"
+                android:scaleType="centerInside"
+                android:src="@drawable/button_choose_alien"
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/button_choose_predator"
+                android:layout_width="@dimen/image_portrait_size"
+                android:layout_height="@dimen/image_portrait_size"
+                android:layout_margin="@dimen/normal_margin"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:onClick="buttonChoosePredator"
+                android:scaleType="centerInside"
+                android:src="@drawable/button_choose_predator"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/panel_start_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/panel_start_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <ImageButton
+                    android:id="@+id/button_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:background="@color/transparent"
+                    android:onClick="buttonStartGame"
+                    android:src="@drawable/button_start"
+
+
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/panel_action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:id="@+id/panel_achtion_buttons_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <ImageButton
+                android:id="@+id/button_alien_hit_claw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:onClick="buttonPunch"
+                android:src="@drawable/button_hit"
+
+                />
+
+            <ImageButton
+                android:id="@+id/button_predator_hit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:onClick="buttonPredatorHit"
+                android:src="@drawable/button_hit"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/panel_achtion_buttons_row_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <ImageButton
+                android:id="@+id/button_alien_hit_tail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:onClick="buttonKick"
+                android:src="@drawable/button_hit"
+                android:visibility="visible"
+
+                />
+
+            <ImageButton
+                android:id="@+id/button_predator_kick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:onClick="buttonPredatorKick"
+                android:src="@drawable/button_hit"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/panel_achtion_buttons_row_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+
+            <ImageButton
+                android:id="@+id/button_alien_doge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:onClick="buttonThreeHit"
+                android:src="@drawable/button_hit"
+
+                />
+
+            <ImageButton
+                android:id="@+id/button_predator_doge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:onClick="buttonPredatorDoge"
+                android:src="@drawable/button_hit"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

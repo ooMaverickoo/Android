@@ -1,0 +1,10 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item android:drawable="@drawable/predator_die0" android:duration="600" />
+    <item android:drawable="@drawable/predator_die1" android:duration="300" />
+    <item android:drawable="@drawable/predator_die2" android:duration="200" />
+    <item android:drawable="@drawable/predator_die3" android:duration="200" />
+    <item android:drawable="@drawable/predator_die4" android:duration="200" />
+    <item android:drawable="@drawable/predator_die5" android:duration="200" />
+    <item android:drawable="@drawable/predator_die6" android:duration="200" />
+</animation-list>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="start_text_size">26sp</dimen>
+    <dimen name="status_text_size">22sp</dimen>
+    <dimen name="header_text_size">32sp</dimen>
+    <dimen name="normal_padding">16dp</dimen>
+    <dimen name="normal_margin">16dp</dimen>
+    <dimen name="line_1dp">1dp</dimen>
+    <dimen name="line_2dp">1dp</dimen>
+    <dimen name="line_3dp">3dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="image_portrait_size">100dp</dimen>
+    <dimen name="image_title_size">80dp</dimen>
+
+</resources>

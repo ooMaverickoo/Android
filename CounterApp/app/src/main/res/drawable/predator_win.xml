@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/predator_win0"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win1"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win2"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win3"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win4"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win5"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/predator_win6"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win7"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win8"
+        android:duration="200" />
+</animation-list>

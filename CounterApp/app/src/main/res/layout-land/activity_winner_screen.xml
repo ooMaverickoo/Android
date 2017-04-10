@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_margin"
+        android:background="@color/transparentBlue"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_title_size"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_title" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/winner_status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_main"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/winner_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBlue"
+            android:gravity="center_horizontal"
+            android:text="@string/alien_wins"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/header_text_size" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/panel_choose_hero_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/winner_status_panel"
+        android:orientation="horizontal"
+        android:visibility="visible"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/winner_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/panel_start_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/info_screen"
+                    android:layout_width="@dimen/text_field_size_round_info_screen"
+                    android:layout_height="@dimen/winner_image_portrait_size"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:background="@color/transparentBlue"
+                    android:gravity="center"
+                    android:padding="@dimen/normal_padding"
+                    android:text="@string/rounds_to_win"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="@dimen/winner_info_text_size"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/predator_win_image"
+                    android:layout_width="@dimen/winner_image_portrait_size"
+                    android:layout_height="@dimen/winner_image_portrait_size"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/button_choose_predator"
+                    android:visibility="gone"
+
+
+                    />
+
+                <ImageView
+                    android:id="@+id/alien_win_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/winner_image_portrait_size"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/button_choose_alien"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/button_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="@dimen/normal_margin"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:background="@color/transparent"
+                    android:onClick="buttonRestartGame"
+                    android:src="@drawable/button_start" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

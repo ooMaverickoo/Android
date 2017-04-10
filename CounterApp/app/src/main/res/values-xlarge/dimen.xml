@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="start_text_size">42sp</dimen>
+    <dimen name="status_text_size">38sp</dimen>
+    <dimen name="header_text_size">32sp</dimen>
+    <dimen name="normal_padding">32dp</dimen>
+    <dimen name="normal_margin">32dp</dimen>
+    <dimen name="line_1dp">1dp</dimen>
+    <dimen name="line_2dp">1dp</dimen>
+    <dimen name="line_3dp">3dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_8dp">32dp</dimen>
+    <dimen name="image_portrait_size">250dp</dimen>
+    <dimen name="image_title_size">200dp</dimen>
+    <integer name="toast_vertical">-30</integer>
+    <dimen name="table_text_size">32sp</dimen>
+    <dimen name="winner_info_text_size">32sp</dimen>
+    <dimen name="status_toast_size">18sp</dimen>
+    <dimen name="draw_text_size">42sp</dimen>
+    <dimen name="life_text_size">180sp</dimen>
+    <dimen name="round_value_size">42sp</dimen>
+    <dimen name="extra_padding">32dp</dimen>
+    <dimen name="extra_margin">32dp</dimen>
+    <dimen name="life_portrait_size">230dp</dimen>
+    <dimen name="winner_image_portrait_size">160dp</dimen>
+    <dimen name="text_field_size_round_info_screen">230dp</dimen>
+    <dimen name="screen_size_width">600dp</dimen>
+    <dimen name="screen_size_height">350dp</dimen>
+    <dimen name="margin_alien">180dp</dimen>
+    <dimen name="margin_predator">140dp</dimen>
+
+
+</resources>

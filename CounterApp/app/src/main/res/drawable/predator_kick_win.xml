@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/predator_kick0"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_kick1"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_kick2"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_kick3"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_kick4"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_hit0"
+        android:duration="600" />
+    <item
+        android:drawable="@drawable/predator_win0"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win1"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win2"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win3"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win4"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win5"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/predator_win6"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win7"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/predator_win8"
+        android:duration="200" />
+</animation-list>

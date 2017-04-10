@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/alien_hit0000"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_hit0001"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_hit0002"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_hit0003"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_hit209"
+        android:duration="600" />
+    <item
+        android:drawable="@drawable/alien_win0"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win1"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win2"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win3"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win4"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win5"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/alien_win6"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win7"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win8"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win9"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win10"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win11"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win12"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win13"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win14"
+        android:duration="500" />
+    <item
+        android:drawable="@drawable/alien_win15"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win16"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win17"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win18"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/alien_win19"
+        android:duration="200" />
+</animation-list>

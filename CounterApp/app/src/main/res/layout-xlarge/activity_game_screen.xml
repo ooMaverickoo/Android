@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <LinearLayout
+        android:id="@+id/score_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status_panel"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/status_panel"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/alien_screen"
+                android:layout_alignLeft="@+id/alien_screen"
+                android:layout_alignRight="@+id/alien_screen"
+                android:layout_alignTop="@+id/alien_screen"
+                android:scaleType="fitXY"
+                android:src="@drawable/alien_life_screen_background" />
+
+            <TextView
+                android:id="@+id/alien_screen"
+                style="@style/glowing_text_white"
+                android:layout_width="@dimen/life_portrait_size"
+                android:layout_height="@dimen/life_portrait_size"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:gravity="center"
+                android:text="@string/start_health"
+                android:textSize="@dimen/life_text_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding">
+
+
+            <TextView
+                android:id="@+id/round"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/line_2dp"
+                android:background="@color/transparentBlue"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding_8dp"
+                android:text="@string/round"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/round_value_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/round_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/line_2dp"
+                android:background="@color/transparentBlue"
+                android:gravity="center_horizontal"
+                android:text="@string/round_value"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/round_value_size"
+                android:textStyle="normal" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/line_2dp"
+                android:background="@color/transparentBlue"
+                android:gravity="center_horizontal"
+                android:text="@string/draw"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/draw_text_size"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/draw_screen"
+                style="@style/glowing_text_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparentBlue"
+                android:gravity="center_horizontal"
+                android:text="1"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/draw_text_size"
+
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/predator_screen"
+                android:layout_alignLeft="@+id/predator_screen"
+                android:layout_alignRight="@+id/predator_screen"
+                android:layout_alignTop="@+id/predator_screen"
+                android:scaleType="fitXY"
+                android:src="@drawable/predator_life_screen_background" />
+
+            <TextView
+                android:id="@+id/predator_screen"
+                style="@style/glowing_text_white"
+                android:layout_width="@dimen/life_portrait_size"
+                android:layout_height="@dimen/life_portrait_size"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/normal_margin"
+                android:layout_marginRight="@dimen/normal_margin"
+                android:gravity="center"
+                android:text="@string/start_health"
+                android:textSize="@dimen/life_text_size" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_panel"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/status_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparentBlue"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/normal_padding"
+            android:paddingRight="@dimen/normal_padding"
+            android:text="@string/make_your_choice"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/status_text_size" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/animation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status_panel"
+        android:layout_alignStart="@+id/status_panel"
+        android:layout_below="@+id/status_panel"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="@dimen/screen_size_width"
+            android:layout_height="@dimen/line_2dp"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:background="@color/colorBlue" />
+
+        <RelativeLayout
+            android:id="@+id/animation_panel"
+            android:layout_width="@dimen/screen_size_width"
+            android:layout_height="@dimen/screen_size_height"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:background="@drawable/background_arena">
+
+
+            <ImageView
+                android:id="@+id/alien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/margin_alien"
+                android:background="@drawable/alien_hit0000" />
+
+            <ImageView
+                android:id="@+id/predator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginRight="@dimen/margin_predator"
+                android:background="@drawable/predator_hit0" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/screen_size_width"
+            android:layout_height="@dimen/line_2dp"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:background="@color/colorBlue" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/panel_start_button_game_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation_layout"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/button_start_game_fight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@color/transparent"
+            android:onClick="buttonStartGameFight"
+            android:src="@drawable/button_fight"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/button_hit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@color/transparent"
+            android:onClick="buttonHit"
+            android:src="@drawable/button_hit"
+
+            />
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@color/transparent"
+            android:onClick="buttonNext"
+            android:src="@drawable/button_next"
+            android:visibility="gone"
+
+            />
+
+        <ImageButton
+            android:id="@+id/button_winner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:background="@color/transparent"
+            android:onClick="buttonWinner"
+            android:src="@drawable/button_next"
+            android:visibility="gone"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/panel_action_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/animation_layout"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/panel_action_buttons_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_marginStart="@dimen/normal_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageButton
+                android:id="@+id/button_action_kick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:background="@color/transparent"
+                android:onClick="buttonKick"
+                android:src="@drawable/button_kick"
+                android:visibility="visible"
+
+                />
+
+
+            <ImageButton
+                android:id="@+id/button_action_punch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:background="@color/transparent"
+                android:onClick="buttonPunch"
+                android:src="@drawable/button_punch"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
