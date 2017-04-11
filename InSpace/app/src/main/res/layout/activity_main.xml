@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.inspace.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        style="@style/background_image_style"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/alien" />
+
+    <LinearLayout style="@style/layout_one">
+
+
+        <TextView
+            style="@style/text_style_glow_green"
+            android:text="@string/in" />
+
+        <TextView
+            style="@style/text_style_glow_white"
+            android:text="@string/space" />
+
+    </LinearLayout>
+
+
+    <LinearLayout style="@style/layout_two">
+
+
+        <TextView
+            style="@style/text_style_glow_green"
+            android:text="@string/no" />
+
+
+        <TextView
+            style="@style/text_style_glow_white"
+            android:text="@string/one" />
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_three">
+
+
+        <TextView
+            style="@style/text_style_glow_green"
+            android:text="@string/can_hear" />
+
+        <TextView
+            style="@style/text_style_glow_white"
+            android:text="@string/your_scream" />
+
+
+    </LinearLayout>
+</RelativeLayout>

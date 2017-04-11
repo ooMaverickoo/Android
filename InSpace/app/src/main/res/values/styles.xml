@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AlienStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorBackground</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimaryInverse">@android:color/darker_gray</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+        <item name="android:colorForeground">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+    </style>
+
+    <style name="glowing_text_green">
+        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:shadowColor">@color/colorBackground</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="glowing_text_white">
+        <item name="android:textColor">@color/color_material_light</item>
+        <item name="android:shadowColor">@color/colorBackground</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">15</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="background_image_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+    <style name="layout_one">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">@dimen/alien_margin</item>
+    </style>
+
+
+    <style name="text_style_glow_green" parent="glowing_text_green">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/alien_padding</item>
+        <item name="android:textSize">@dimen/alien_font_size</item>
+    </style>
+
+
+    <style name="text_style_glow_white" parent="glowing_text_white">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/alien_padding</item>
+        <item name="android:textSize">@dimen/alien_font_size</item>
+    </style>
+
+
+    <style name="layout_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">@dimen/alien_margin</item>
+    </style>
+
+    <style name="layout_three">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_margin">@dimen/alien_margin</item>
+    </style>
+
+
+</resources>

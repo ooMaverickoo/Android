@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InSpace</string>
+    <string name="in">In</string>
+    <string name="space">Space,</string>
+    <string name="no">no</string>
+    <string name="one">one</string>
+    <string name="can_hear">can hear"</string>
+    <string name="your_scream">your scream"</string>
+    <string name="content_description">Image from Alien Isolation</string>
+</resources>
