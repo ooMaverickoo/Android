@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit</string>
+    <string name="pets">Pets</string>
+    <string name="heads">Heads</string>
+    <string name="not_your_father">Not Your Father</string>
+    <string name="android">Android, what else?</string>
+    <string name="alien_movie_quiz">Alien Movie Quiz</string>
+    <string name="welcome_text">Welcome. My name is mother and i will test your knowledge.
+        \nPlease enter your name and press the button to start.</string>
+    <string name="toast_mother_thanks_you">Thank you, %1$s. Now we can start</string>
+    <string name="toast_mother_needs_your_name">Mother needs your name</string>
+    <string name="toast_mother_needs_sign">You don\'t know my name?</string>
+    <string name="mother">mother</string>
+    <string name="mother_says">Mother says: That\'s true.\n Your Score: %1$d points</string>
+    <string name="mother_is_angry">Mother is not amused: That\'s wrong.\n Your Score: %1$d points</string>
+
+    <string name="your_name">Your name</string>
+    <string name="your_answer">Your answer</string>
+
+    <string name="question_one">What kind of pet did the crew not keep on board the space vessel in Alien?</string>
+    <string name="answer_one_1">rabbit</string>
+    <string name="answer_one_2">snake</string>
+    <string name="answer_one_3">cat</string><!--right answer-->
+    <string name="answer_one_4">dog</string>
+
+    <string name="question_two">Which of the following actresses played Warrant Officer Ripley in Alien?</string>
+    <string name="answer_seven_1">1</string><!--right answer-->
+    <string name="answer_seven_2">2</string>
+    <string name="answer_seven_3">3</string>
+    <string name="answer_seven_4">4</string>
+
+    <string name="question_three">What is the name of the computer that runs the spaceship in Alien?</string>
+    <string name="answer_five_1">Mother</string><!--right answer-->
+
+
+    <string name="question_four">Which of the crew members in Alien is not human?</string>
+    <string name="answer_three_1">Parker</string>
+    <string name="answer_three_2">Kane</string>
+    <string name="answer_three_3">Ash</string><!--right answer-->
+    <string name="answer_three_4">Lambert</string>
+
+
+    <!--statistic strings-->
+    <string name="your_results">Your results</string>
+    <string name="congratulation">Congratulation , %1$s\n\n</string>
+    <string name="question1">"Question 1: %1$b %2$d Points\n"</string>
+    <string name="question2">"Question 2: %1$b %2$d Points\n"</string>
+    <string name="question3">"Question 3: %1$b %2$d Points\n"</string>
+    <string name="question4">"Question 4: %1$b %2$d Points\n"</string>
+    <string name="result">Overall result: %1$d\n\n</string>
+    <string name="mother_is_proud">Mother is proud of you</string>
+
+
+</resources>

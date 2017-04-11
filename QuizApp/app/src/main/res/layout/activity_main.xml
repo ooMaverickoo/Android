@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_egg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout style="@style/outer_layout_style">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/welcome"
+                style="@style/quiz_card_style"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/transparentWindowColor"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:contentPadding="@dimen/padding_8dp">
+
+
+                <LinearLayout style="@style/inner_layout_style">
+
+                    <TextView
+                        style="@style/welcome_header_style"
+                        android:text="@string/alien_movie_quiz" />
+
+
+                    <LinearLayout style="@style/inner_window_style">
+
+
+                        <TextView
+                            android:id="@+id/welcome_header"
+                            style="@style/quiz_question_text_style"
+                            android:text="@string/welcome_text" />
+
+                        <View style="@style/view_style" />
+
+                        <!-- Place your content here-->
+
+                        <EditText
+                            android:id="@+id/user_name"
+                            style="@style/quiz_edit_text_style"
+                            android:textIsSelectable="true" />
+
+                        <!-- Your content ends here-->
+
+
+                        <Button
+                            style="@style/button_style"
+                            android:onClick="buttonSubmitWelcome"
+                            android:text="@string/submit"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionOne"
+                style="@style/quiz_card_style"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/transparentWindowColor"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:contentPadding="@dimen/padding_8dp">
+
+                <LinearLayout style="@style/outer_layout_style">
+
+                    <TextView
+                        android:id="@+id/headerOne"
+                        style="@style/quiz_header_style"
+                        android:text="@string/pets" />
+
+
+                    <LinearLayout style="@style/inner_window_style">
+
+
+                        <TextView
+
+                            style="@style/quiz_question_text_style"
+                            android:text="@string/question_one" />
+
+                        <View style="@style/view_style" />
+
+                        <LinearLayout style="@style/checkbox_outer_layout">
+
+                            <LinearLayout style="@style/checkbox_inner_layout">
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_one_one"
+                                    style="@style/checkbox_style"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="@string/answer_one_1" />
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_one_two"
+                                    style="@style/checkbox_style"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="@string/answer_one_2" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout style="@style/checkbox_inner_layout">
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_one_three"
+                                    style="@style/checkbox_style"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="@string/answer_one_3" />
+
+                                <CheckBox
+                                    android:id="@+id/checkbox_one_four"
+                                    style="@style/checkbox_style"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="@string/answer_one_4"
+
+
+                                    />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Button
+                            style="@style/button_style"
+                            android:onClick="buttonSubmitOne"
+                            android:text="@string/submit"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionTwo"
+                style="@style/quiz_card_style"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/transparentWindowColor"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:contentPadding="@dimen/padding_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/headerTwo"
+                        style="@style/quiz_header_style"
+                        android:text="@string/heads" />
+
+
+                    <LinearLayout style="@style/inner_window_style">
+
+
+                        <TextView
+                            style="@style/quiz_question_text_style"
+                            android:text="@string/question_two" />
+
+                        <View style="@style/view_style" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_two"
+                            style="@style/radio_button_group_style">
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_two_one"
+                                style="@style/radio_button__style"
+                                android:drawableEnd="@drawable/sigourney_weaver"
+                                android:drawableRight="@drawable/sigourney_weaver" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_two_two"
+                                style="@style/radio_button__style"
+                                android:drawableLeft="@drawable/lena_olin"
+                                android:drawableStart="@drawable/lena_olin" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_two_three"
+                                style="@style/radio_button__style"
+                                android:drawableLeft="@drawable/cate_blanchett"
+                                android:drawableStart="@drawable/cate_blanchett" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_two_four"
+                                style="@style/radio_button__style"
+                                android:drawableLeft="@drawable/julianne_moore"
+                                android:drawableStart="@drawable/julianne_moore" />
+
+
+                        </RadioGroup>
+
+
+                        <Button
+                            style="@style/button_style"
+                            android:onClick="buttonSubmitTwo"
+                            android:text="@string/submit"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionThree"
+                style="@style/quiz_card_style"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/transparentWindowColor"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:contentPadding="@dimen/padding_8dp">
+
+                <LinearLayout style="@style/inner_layout_style">
+
+                    <TextView
+                        android:id="@+id/headerFive"
+                        style="@style/quiz_header_style"
+                        android:text="@string/not_your_father" />
+
+
+                    <LinearLayout style="@style/inner_window_style">
+
+
+                        <TextView
+                            style="@style/quiz_question_text_style"
+                            android:text="@string/question_three" />
+
+                        <View style="@style/view_style" />
+
+                        <!-- Place your content here-->
+
+                        <EditText
+                            android:id="@+id/answer_edit_text_three"
+                            style="@style/quiz_edit_text_style" />
+
+                        <!-- Your content ends here-->
+
+
+                        <Button
+                            style="@style/button_style"
+                            android:onClick="buttonSubmitThree"
+                            android:text="@string/submit"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/questionFour"
+                style="@style/quiz_card_style"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/transparentWindowColor"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:contentPadding="@dimen/padding_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/headerThree"
+                        style="@style/quiz_header_style"
+                        android:text="@string/android" />
+
+
+                    <LinearLayout style="@style/inner_window_style">
+
+
+                        <TextView
+
+                            style="@style/quiz_question_text_style"
+                            android:text="@string/question_four" />
+
+                        <View style="@style/view_style" />
+
+                        <RadioGroup
+                            android:id="@+id/radio_group_four"
+                            style="@style/radio_button_group_style">
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_four_one"
+                                style="@style/radio_button__style"
+                                android:text="@string/answer_three_1" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_four_two"
+                                style="@style/radio_button__style"
+                                android:text="@string/answer_three_2" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_four_three"
+                                style="@style/radio_button__style"
+                                android:text="@string/answer_three_3" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_button_four_four"
+                                style="@style/radio_button__style"
+                                android:text="@string/answer_three_4" />
+
+
+                        </RadioGroup>
+
+
+                        <Button
+                            style="@style/button_style"
+                            android:onClick="buttonSubmitFour"
+                            android:text="@string/submit"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/statistic_card"
+                style="@style/quiz_card_style"
+                android:visibility="visible"
+                app:cardBackgroundColor="@color/transparentWindowColor"
+                app:cardCornerRadius="@dimen/card_corner"
+                app:contentPadding="@dimen/padding_8dp">
+
+                <LinearLayout style="@style/inner_layout_style">
+
+                    <TextView
+                        android:id="@+id/headerSix"
+                        style="@style/quiz_header_style"
+                        android:text="@string/your_results" />
+
+
+                    <LinearLayout style="@style/inner_window_style">
+
+
+                        <TextView
+                            style="@style/quiz_question_text_style"
+                            android:text="@string/your_results" />
+
+                        <View style="@style/view_style" />
+
+                        <!-- Place your content here-->
+
+                        <TextView
+                            android:id="@+id/statistic_view"
+                            style="@style/quiz_question_text_style" />
+
+                        <!-- Your content ends here-->
+
+
+                        <Button
+                            style="@style/button_style"
+                            android:onClick="buttonReset"
+                            android:text="@string/reset"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
