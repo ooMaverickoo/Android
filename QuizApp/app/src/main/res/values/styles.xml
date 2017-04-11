@@ -46,7 +46,7 @@
 
 
     <style name="quiz_edit_text_style" parent="quiz_question_text_style">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/transparentGreen</item>
         <item name="android:textSize">@dimen/edit_text_size</item>
         <item name="android:inputType">text</item>
     </style>

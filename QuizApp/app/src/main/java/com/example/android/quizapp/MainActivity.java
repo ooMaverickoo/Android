@@ -17,6 +17,19 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //statics for strings
+    final static String ANSWER_ONE = "mAnswerOne";
+    final static String ANSWER_ONE_ONE = "mAnswerOneOne";
+    final static String ANSWER_ONE_TWO = "mAnswerOneTwo";
+    final static String ANSWER_ONE_THREE = "mAnswerOneThree";
+    final static String ANSWER_ONE_FOUR = "mAnswerOneFour";
+    final static String ANSWER_TWO = "mAnswerTwo";
+    final static String ANSWER_THREE = "mAnswerThree";
+    final static String ANSWER_FOUR = "mAnswerFour";
+    final static String SCORE_COUNTER ="mScoreCounter";
+    final static String QUESTION_COUNTER= "mQuestionCounter";
+    final static String STATISTIC_TEXT = "mStatisticText";
+
     //Important variables for showing the points of the value
     private int mQuestionCounter;//counter the stat of the question 0 = welcome 4= last question 5 = statistics
     private int mScoreCounter;
@@ -76,6 +89,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         //question windows
         mCardWelcomeWindow = (CardView) findViewById(R.id.welcome);
         mCardQuestionOne = (CardView) findViewById(R.id.questionOne);
@@ -122,17 +138,18 @@ public class MainActivity extends AppCompatActivity {
 
         //gets the variables if the orientation is changed
         if (savedInstanceState != null) {
-            mAnswerOne = savedInstanceState.getBoolean("mAnswerOne");
-            mAnswerOneOne = savedInstanceState.getBoolean("mAnswerOneOne");
-            mAnswerOneTwo = savedInstanceState.getBoolean("mAnswerOneTwo");
-            mAnswerOneThree = savedInstanceState.getBoolean("mAnswerOneThree");
-            mAnswerOneFour = savedInstanceState.getBoolean("mAnswerOneFour");
-            mAnswerTwo = savedInstanceState.getBoolean("mAnswerTwo");
-            mAnswerThree = savedInstanceState.getBoolean("mAnswerThree");
-            mAnswerFour = savedInstanceState.getBoolean("mAnswerFour");
-            mScoreCounter = savedInstanceState.getInt("mScoreCounter");
-            mQuestionCounter = savedInstanceState.getInt("mQuestionCounter");
-            mStatisticText = savedInstanceState.getString("mStatisticText");
+            mAnswerOne = savedInstanceState.getBoolean(ANSWER_ONE);
+            mAnswerOneOne = savedInstanceState.getBoolean(ANSWER_ONE_ONE);
+            mAnswerOneTwo = savedInstanceState.getBoolean(ANSWER_ONE_TWO);
+            mAnswerOneThree = savedInstanceState.getBoolean(ANSWER_ONE_THREE);
+            mAnswerOneFour = savedInstanceState.getBoolean(ANSWER_ONE_FOUR);
+            mAnswerTwo = savedInstanceState.getBoolean(ANSWER_TWO);
+            mAnswerThree = savedInstanceState.getBoolean(ANSWER_THREE);
+            mAnswerFour = savedInstanceState.getBoolean(ANSWER_FOUR);
+            mScoreCounter = savedInstanceState.getInt(SCORE_COUNTER);
+            mQuestionCounter = savedInstanceState.getInt(QUESTION_COUNTER);
+            mStatisticText = savedInstanceState.getString(STATISTIC_TEXT);
+
 
             //clear all windows
             mCardWelcomeWindow.setVisibility(View.GONE);
@@ -179,17 +196,17 @@ public class MainActivity extends AppCompatActivity {
     //save status of variables in case of orientation change
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putBoolean("mAnswerOne", mAnswerOne);
-        savedInstanceState.putBoolean("mAnswerOneOne", mAnswerOneOne);
-        savedInstanceState.putBoolean("mAnswerOneTwo", mAnswerOneTwo);
-        savedInstanceState.putBoolean("mAnswerOneThree", mAnswerOneThree);
-        savedInstanceState.putBoolean("mAnswerOneFour", mAnswerOneFour);
-        savedInstanceState.putBoolean("mAnswerTwo", mAnswerTwo);
-        savedInstanceState.putBoolean("mAnswerThree", mAnswerThree);
-        savedInstanceState.putBoolean("mAnswerFour", mAnswerFour);
-        savedInstanceState.putInt("mScoreCounter", mScoreCounter);
-        savedInstanceState.putInt("mQuestionCounter", mQuestionCounter);
-        savedInstanceState.putString("mStatisticText", mStatisticText);
+        savedInstanceState.putBoolean(ANSWER_ONE, mAnswerOne);
+        savedInstanceState.putBoolean(ANSWER_ONE_ONE, mAnswerOneOne);
+        savedInstanceState.putBoolean(ANSWER_ONE_TWO, mAnswerOneTwo);
+        savedInstanceState.putBoolean(ANSWER_ONE_THREE, mAnswerOneThree);
+        savedInstanceState.putBoolean(ANSWER_ONE_FOUR, mAnswerOneFour);
+        savedInstanceState.putBoolean(ANSWER_TWO, mAnswerTwo);
+        savedInstanceState.putBoolean(ANSWER_THREE, mAnswerThree);
+        savedInstanceState.putBoolean(ANSWER_FOUR, mAnswerFour);
+        savedInstanceState.putInt(SCORE_COUNTER, mScoreCounter);
+        savedInstanceState.putInt(QUESTION_COUNTER, mQuestionCounter);
+        savedInstanceState.putString(STATISTIC_TEXT, mStatisticText);
 
         super.onSaveInstanceState(savedInstanceState);
     }
@@ -359,6 +376,16 @@ public class MainActivity extends AppCompatActivity {
         mAnswerTwo = false;
         mAnswerThree = false;
         mAnswerFour = false;
+        mCheckBoxAnswerOneOne.setChecked(false);
+        mCheckBoxAnswerOneTwo.setChecked(false);
+        mCheckBoxAnswerOneThree.setChecked(false);
+        mCheckBoxAnswerOneFour.setChecked(false);
+        mRadioGroupAnswerTwo.clearCheck();
+        mRadioGroupAnswerFour.clearCheck();
+        mEditTextInputUserName.setText("");
+        mEditTextInputAnswerThree.setText("");
+
+
     }
 
     public String makeStatistic() {
