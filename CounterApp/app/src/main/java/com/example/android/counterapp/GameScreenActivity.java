@@ -25,6 +25,25 @@ import static com.example.android.counterapp.R.id.predator;
 import static com.example.android.counterapp.R.string.dmg;
 
 public class GameScreenActivity extends AppCompatActivity {
+
+    final static String ROUND_VALUE = "mRoundValue";
+    final static String DRAWS = "mDraws";
+    final static String ALIEN_LIFE_VALUE = "mAlienLifeValue";
+    final static String PREDATOR_LIFE_VALUE = "mPredatorLifeValue";
+    final static String ALIEN_DEAD = "mAlienDead";
+    final static String PREDATOR_DEAD = "mPredator";
+    final static String ALIEN_HIT_POINTS = "mAlienHitPoints";
+    final static String PREDATOR_HIT_POINTS = "mPredatorHitPoints";
+    final static String BACKGROUND_IMAGE = "mBackgroundId";
+    final static String ALIEN_SELECTED = "mAlienSelected";
+    final static String PREDATOR_SELECTED = "mPredatorSelected";
+    final static String HIT_BUTTON_VISIBLE = "mHitButtonVisible";
+    final static String FIGHT_BUTTON_VISIBLE = "mFightButtonVisible";
+    final static String SCREEN_TEXT = "mScreenText";
+    final static String ACTION_BUTTON_ALL_VISIBLE = "mActionButtonsAllVisible";
+    final static String BUTTON_NEXT = "mButtonNext";
+
+
     private final int MAX_DMG = 3;
     private final int MIN_DMG = 1;
     private final int KICK = 2;
@@ -32,6 +51,7 @@ public class GameScreenActivity extends AppCompatActivity {
     private final int BUTTON_DURATION_TIME_1500 = 1500;
     private final int TOAST_DURATION_TIME_1000 = 1000;
     private final int MAX_ENERGY = 5;
+
 
     private AnimationDrawable alienAnimation;
     private AnimationDrawable predatorAnimation;
@@ -49,33 +69,37 @@ public class GameScreenActivity extends AppCompatActivity {
     private boolean mAlienImageSelected = false;
     private boolean mPredatorImageSelected = false;
 
+    private ViewGroup animationPanel;
+    private ViewGroup buttonPanelAllButton;
+    private ImageButton buttonHit;
+    private ImageButton buttonStartFight;
+    private ImageButton buttonKick;
+    private ImageButton buttonPunch;
+    private TextView drawScreen;
+    private TextView roundScreen;
+    private TextView screen;
+    private TextView alienScreen;
+    private TextView predatorScreen;
+    private int mBackgroundImage;
+    private ImageButton buttonNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
-        ViewGroup animationPanel = (ViewGroup) findViewById(R.id.animation_panel);
-        ViewGroup buttonPanelAllButton = (ViewGroup) findViewById(R.id.panel_action_buttons);
-        ImageButton buttonStart = (ImageButton) findViewById(R.id.button_start_game_fight);
-        ImageButton buttonHit = (ImageButton) findViewById(R.id.button_hit);
-        TextView screen = (TextView) findViewById(R.id.status_screen);
-        TextView alienScreen = (TextView) findViewById(R.id.alien_screen);
-        TextView predatorScreen = (TextView) findViewById(R.id.predator_screen);
 
 
-        switch (createRandomNumber(3, 1)) {
-            case 1:
-                animationPanel.setBackgroundResource(R.drawable.background_spaceship);
-                break;
+        animationPanel = (ViewGroup) findViewById(R.id.animation_panel);
+        buttonPanelAllButton = (ViewGroup) findViewById(R.id.panel_action_buttons);
+        buttonStartFight = (ImageButton) findViewById(R.id.button_start_game_fight);
+        buttonHit = (ImageButton) findViewById(R.id.button_hit);
+        screen = (TextView) findViewById(R.id.status_screen);
+        alienScreen = (TextView) findViewById(R.id.alien_screen);
+        predatorScreen = (TextView) findViewById(R.id.predator_screen);
+        drawScreen = (TextView) findViewById(R.id.draw_screen);
+        roundScreen = (TextView) findViewById(R.id.round_screen);
+        buttonNext = (ImageButton) findViewById(R.id.button_next);
 
-            case 2:
-                animationPanel.setBackgroundResource(R.drawable.background_arena);
-                break;
-
-            case 3:
-                animationPanel.setBackgroundResource(R.drawable.background_prometheus);
-                break;
-        }
 
 
         //Create Bundle for the transfer of the variables
@@ -87,7 +111,6 @@ public class GameScreenActivity extends AppCompatActivity {
 
 
         buttonPanelAllButton.setVisibility(View.GONE);
-        buttonStart.setVisibility(View.VISIBLE);
         buttonHit.setVisibility(View.GONE);
         setRoundStatusText(mRoundValue);
         screen.setText(R.string.press_fight_to_start);
@@ -95,14 +118,112 @@ public class GameScreenActivity extends AppCompatActivity {
         predatorScreen.setText(String.valueOf(MAX_ENERGY));
 
 
+        //gets the variables if the orientation is changed
+        if (savedInstanceState != null) {
+            int vis;
+            mRoundValue = savedInstanceState.getInt(ROUND_VALUE);
+            mDraw = savedInstanceState.getInt(DRAWS);
+            mAlienLifeValue = savedInstanceState.getInt(ALIEN_LIFE_VALUE);
+            mPredatorLifeValue = savedInstanceState.getInt(PREDATOR_LIFE_VALUE);
+            mAlienDead = savedInstanceState.getBoolean(ALIEN_DEAD);
+            mPredatorDead = savedInstanceState.getBoolean(PREDATOR_DEAD);
+            mAlienHitValue = (savedInstanceState.getInt(ALIEN_HIT_POINTS));
+            mPredatorHitValue = (savedInstanceState.getInt(PREDATOR_HIT_POINTS));
+            mBackgroundImage = (savedInstanceState.getInt(BACKGROUND_IMAGE));
+            mAlienImageSelected = savedInstanceState.getBoolean(ALIEN_SELECTED);
+            mPredatorImageSelected = savedInstanceState.getBoolean(PREDATOR_SELECTED);
+            vis = savedInstanceState.getInt(HIT_BUTTON_VISIBLE);
+            buttonHit.setVisibility(vis == 0 ? View.VISIBLE : vis == 4 ? View.INVISIBLE : View.GONE);
+            vis = savedInstanceState.getInt(FIGHT_BUTTON_VISIBLE);
+            buttonStartFight.setVisibility(vis == 0 ? View.VISIBLE : vis == 4 ? View.INVISIBLE : View.GONE);
+            screen.setText(savedInstanceState.getString(SCREEN_TEXT));
+            vis = savedInstanceState.getInt(ACTION_BUTTON_ALL_VISIBLE);
+            buttonPanelAllButton.setVisibility(vis == 0 ? View.VISIBLE : vis == 4 ? View.INVISIBLE : View.GONE);
+            vis = savedInstanceState.getInt(BUTTON_NEXT);
+            buttonNext.setVisibility(vis == 0 ? View.VISIBLE : vis == 4 ? View.INVISIBLE : View.GONE);
+            alienScreen.setText(String.valueOf(mAlienLifeValue));
+            predatorScreen.setText(String.valueOf(mPredatorLifeValue));
+            drawScreen.setText(String.valueOf(mDraw));
+            roundScreen.setText(String.valueOf(mRoundValue));
+
+            switch (mBackgroundImage) {
+                case 1:
+                    animationPanel.setBackgroundResource(R.drawable.background_spaceship);
+                    mBackgroundImage = R.drawable.background_spaceship;
+                    break;
+
+                case 2:
+                    animationPanel.setBackgroundResource(R.drawable.background_arena);
+                    mBackgroundImage = R.drawable.background_arena;
+                    break;
+
+
+                case 3:
+                    animationPanel.setBackgroundResource(R.drawable.background_prometheus);
+                    mBackgroundImage = R.drawable.background_arena;
+                    break;
+            }
+
+
+        }
+
+        if (savedInstanceState == null) {
+
+            switch (createRandomNumber(3, 1)) {
+                case 1:
+                    animationPanel.setBackgroundResource(R.drawable.background_spaceship);
+                    mBackgroundImage = 1;
+                    break;
+
+                case 2:
+                    animationPanel.setBackgroundResource(R.drawable.background_arena);
+                    mBackgroundImage = 2;
+                    break;
+
+
+                case 3:
+                    animationPanel.setBackgroundResource(R.drawable.background_prometheus);
+                    mBackgroundImage = 3;
+                    break;
+            }
+
+        }
+
+
+
     }
+
+
+    //save status of variables in case of orientation change
+    //save status of variables in case of orientation change
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+
+        savedInstanceState.putInt(ROUND_VALUE, mRoundValue);
+        savedInstanceState.putInt(DRAWS, mDraw);
+        savedInstanceState.putInt(ALIEN_LIFE_VALUE, mAlienLifeValue);
+        savedInstanceState.putInt(PREDATOR_LIFE_VALUE, mPredatorLifeValue);
+        savedInstanceState.putBoolean(ALIEN_DEAD, mAlienDead);
+        savedInstanceState.putBoolean(PREDATOR_DEAD, mPredatorDead);
+        savedInstanceState.putInt(BACKGROUND_IMAGE, mBackgroundImage);
+        savedInstanceState.putBoolean(ALIEN_SELECTED, mAlienImageSelected);
+        savedInstanceState.putBoolean(PREDATOR_SELECTED, mPredatorImageSelected);
+        savedInstanceState.putInt(ACTION_BUTTON_ALL_VISIBLE, buttonPanelAllButton.getVisibility());
+        savedInstanceState.putInt(HIT_BUTTON_VISIBLE, buttonHit.getVisibility());
+        savedInstanceState.putInt(FIGHT_BUTTON_VISIBLE, buttonStartFight.getVisibility());
+        savedInstanceState.putInt(BUTTON_NEXT, buttonNext.getVisibility());
+        savedInstanceState.putString(SCREEN_TEXT, screen.getText().toString());
+        savedInstanceState.putInt(ALIEN_HIT_POINTS, mAlienHitValue);
+        savedInstanceState.putInt(PREDATOR_HIT_POINTS, mPredatorHitValue);
+
+
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
-        if (hasFocus) {
-            predatorWinAnim();
-            alienWinAnim();
-        }
     }
 
     //GameLogic
@@ -1351,23 +1472,10 @@ public class GameScreenActivity extends AppCompatActivity {
     }
 
 
-    public void createActionButtons() {
-
-        ViewGroup buttonPanelAllButton = (ViewGroup) findViewById(R.id.panel_action_buttons);
-        buttonPanelAllButton.setVisibility(View.INVISIBLE);
-    }
-
-
     public void createHitButton() {
 
         ImageButton buttonHit = (ImageButton) findViewById(R.id.button_hit);
         buttonHit.setVisibility(View.VISIBLE);
-    }
-
-    public void deleteHitButton() {
-
-        ImageButton buttonHit = (ImageButton) findViewById(R.id.button_hit);
-        buttonHit.setVisibility(View.GONE);
     }
 
 
