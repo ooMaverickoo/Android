@@ -5,13 +5,37 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.musicalstructureapp.PlayActivity">
 
+    <!-- I will use a simple Java Class Playlist. This Class will be filled with the songs
+     of the users choice. The Playlist Class should be parse some songs of a directory at the phone
+     and should create playlist with help of a xml file. Maybe the data could come from the internet.
+     About this class I will show the playlist, like now ;).. -->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/grey_background" />
 
+
+    <LinearLayout
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/info_text_song_play"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_title"
+            android:background="@color/colorDarkGreyTransparent"
+            android:padding="@dimen/padding_default"/>
+
+    </LinearLayout>
+
     <ScrollView
+        android:layout_below="@+id/info_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 

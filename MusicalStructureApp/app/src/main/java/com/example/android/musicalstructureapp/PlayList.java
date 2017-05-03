@@ -6,6 +6,9 @@ import java.util.Locale;
  * Created by Christian on 01.05.2017.
  */
 
+
+//This class was created with help of stackoverflow website. I modified it for my own use.
+
 public class PlayList {
 
     private Song[] songs;

@@ -20,4 +20,34 @@
 
     <!--Error -->
     <string name="error_collection_full">Error: No space for more titles.</string>
+
+    <!--InfoText-->
+    <string name="info_text_main">This is the Home Layout after starting the app. The software checks the
+    root folder of the app about music files, audio books and play lists of the user. The user can
+    see his folders and could touch on it to get into it..</string>
+
+    <string name="info_text_audio_books">Here we can see the content of a directory called Audio
+    Books. The user can see his audio books and can play a audio book with a touch the play button.
+    Further he can touch on the info button on the right hand side of the play button.
+    This button will show info about the audio book.</string>
+
+    <string name="info_text_play_list">Here we can see the content of a directory called My Music.
+    The user can see his songs and can play a song with a touch the play button.
+    Further he can touch on the info button on the right hand side of the play button.
+    This button will show info about the song.</string>
+
+    <string name="info_text_song_play">This is the Play Screen of the app. The user can see the cover,
+    the Title, the Artist and the Length of the chosen song. With a click on the pause button, the
+    song will pause, forward will go fast forward, rewind fast back. Play will play after Pause.</string>
+
+    <string name="info_text_audio_book_play">This is the Play Screen of the app. The user can see the cover,
+    the Title, the Author and the Length of the chosen audio book. With a click on the pause button, the
+    book will pause, forward will go fast forward, rewind fast back. Play will play after Pause.</string>
+
+    <string name="info_text_title_info">This is the Info Screen of the app. Here the user
+    can see all details of his chosen title. Cover, Album, Author/Artist, Length and Title.</string>
+
+
+
+
 </resources>
