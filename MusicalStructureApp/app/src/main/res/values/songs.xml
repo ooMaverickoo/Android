@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--Music-->
+    <!--Album 1-->
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="first_album">Divide</string>
+    <string name="first_artist">Ed Sheeran</string>
+    <string name="first_title">Shape of You</string>
+    <integer name="first_title_time">233</integer>
+    <!--Album 2-->
+    <string name="second_album">24K Magic</string>
+    <string name="second_artist">Bruno Mars</string>
+    <string name="second_title">That\'s What I Like</string>
+    <integer name="second_title_time">210</integer>
+    <!--Album 3-->
+    <string name="third_album">Starboy</string>
+    <string name="third_artist">The Weeknd feat. Daft Punk</string>
+    <string name="third_title">I Feel It Coming</string>
+    <integer name="third_title_time">297</integer>
+    <!--Album 4-->
+    <string name="fourth_album">Rockabye (feat. Sean Paul &amp; Anne-Marie)</string>
+    <string name="fourth_artist">Clean Bandit feat. Sean Paul &amp; Anne-Marie</string>
+    <string name="fourth_title">Rockabye</string>
+    <integer name="fourth_title_time">251</integer>
+
+
+    <!--Album 5-->
+    <string name="fifth_album">Paris</string>
+    <string name="fifth_artist">The Chainsmokers</string>
+    <string name="fifth_title">Paris</string>
+    <integer name="fifth_title_time">221</integer>
+    <!--Album 6-->
+    <string name="sixth_album">It Ain\'t Me</string>
+    <string name="sixth_artist">Kygo &amp; Selena Gomez</string>
+    <string name="sixth_title">It Ain\'t Me</string>
+    <integer name="sixth_title_time">220</integer>
+    <!--Album 7-->
+    <string name="seventh_album">Chained To The Rhythm</string>
+    <string name="seventh_artist">Katy Perry feat. Skip Marley</string>
+    <string name="seventh_title">Chained To The Rhythm</string>
+    <integer name="seventh_title_time">237</integer>
+
+
+    <!--AudioBooks-->
+
+    <string name="first_book_title">Tesla, SpaceX, and the Quest for a Fantastic Future</string>
+    <string name="first_author">Elon Musk</string>
+    <integer name="first_book_length">48180</integer>
+
+    <string name="second_book_title">The dead zone</string>
+    <string name="second_author">Stephen King</string>
+    <integer name="second_book_length">58260</integer>
+
+    <string name="third_book_title">The Handmaid\'s Tale</string>
+    <string name="third_author">Margaret Atwood</string>
+    <integer name="third_book_length">39600</integer>
+
+</resources>

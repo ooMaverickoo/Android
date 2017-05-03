@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_size_cover_big">400dp</dimen>
+    <dimen name="margin_default">32dp</dimen>
+    <dimen name="padding_default">32dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="text_size_title">22sp</dimen>
+    <dimen name="text_size_author">18sp</dimen>
+    <dimen name="text_size_title_play">28sp</dimen>
+</resources>

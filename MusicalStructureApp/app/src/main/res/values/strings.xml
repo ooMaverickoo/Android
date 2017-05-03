@@ -1,0 +1,23 @@
+<resources>
+
+
+    <!--Other-->
+    <string name="my_music">My Music</string>
+    <string name="favorites">Favorite Music</string>
+    <string name="audio_books">Audio Books</string>
+    <string name="play">Play</string>
+    <string name="details">Details</string>
+    <string name="album">Album</string>
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
+    <string name="length">Length</string>
+    <string name="audio_book">Audio Book</string>
+    <string name="play_button_pressed">Play Button Pressed</string>
+    <string name="pause_button_pressed">Pause Button Pressed</string>
+    <string name="forward_button_pressed">Forward Button Pressed</string>
+    <string name="rewind_button_pressed">Rewind Button Pressed</string>
+
+
+    <!--Error -->
+    <string name="error_collection_full">Error: No space for more titles.</string>
+</resources>
