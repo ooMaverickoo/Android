@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">Tour Guide for Graz</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_hotels">Hotels</string>
+    <string name="category_parks">Parks</string>
+    <string name="category_sights">Sights</string>
+    <string name="category_food">Food</string>
+    <string name="city_name">Graz</string>
+    <string name="adress">Address:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="email">Email:</string>
+    <string name="website">Website:</string>
+    <string name="no_email_address">---</string>
+    <string name="no_website">---</string>
+    <string name="no_telephone">---</string>
+
+    <!-- FOOD-->
+    <!-- Aiola Upstairs Restaurant-->
+    <string name="aiola_upstairs_name">Aiola Upstairs</string>
+    <string name="aiola_telephone">+43/316/8181797</string>
+    <string name="aiola_email">upstairs@aiola.at</string>
+    <string name="aiola_address">Schlossberg 2</string>
+    <string name="aiola_postcode">8010 Graz</string>
+    <string name="aiola_website">http://upstairs.aiola.at</string>
+    <string name="aiola_description">Above the city, delight knows no bounds! And this from morning
+        till evening too. Via the ‘Lift im Berg’ elevator you’re up there in a trice and can start
+        the day with a latte in the morning sunshine. The glass walls, surrounding the tastefully
+        designed aiola upstairs on Schlossberg hill, vanish underground when the weather is fine.
+        Enchanting dining al fresco in the evening by moon and candle light. The aiola upstairs in
+        Graz offers everything you could wish for: breakfast, lunch and dinner.</string>
+
+    <!--Baristas Coffeeshop-->
+    <string name="barista_names">Barista\'s</string>
+    <string name="baristas_telephone">+43/316/225467</string>
+    <string name="baristas_email">upstairs@aiola.at</string>
+    <string name="baristas_address">Franziskanerplatz 4-5</string>
+    <string name="baristas_postcode">8010 Graz</string>
+    <string name="baristas_website">www.baristas.at</string>
+    <string name="baristas_description">Coffee lovers have a huge selection of warm and cold coffee
+        variations, smoothies and milkshakes. For the peckish there\’s a big choice of bagels and
+        sweet temptations like brownies, muffins and cookies as well as various kinds of cheesecake,
+        carrot cake and apple pie. Barrista\'s offers a big choice of breakfast specialities - at
+        Eggenberg, University and Music &amp; Art as well as Tummelplatz square till 3pm, and
+        downtown at Franziskanerplatz square till 11pm.</string>
+
+    <!--Burger Factory-->
+    <string name="burger_factory_name">Burger Factory</string>
+    <string name="burger_factory_telephone">+43/316/710172</string>
+    <string name="burger_factory_email">office@burger-factory.at</string>
+    <string name="burger_factory_address">Feuerbachgasse 24</string>
+    <string name="burger_factory_postcode">8020 Graz</string>
+    <string name="burger_factory_website">www.burger-factory.at</string>
+    <string name="burger_factory_description">The team at the Burger Factory now brings the American way
+        of life into the Styrian capital, with burgers made using fresh local ingredients.
+        The patties, cut fries, sauces and buns are all home-made. Try their classic, cheese,
+        buffalo or veggie burgers!</string>
+
+    <!--Bur-->
+    <string name="bur_name">Bur</string>
+    <string name="bur_telephone">+43/660/4394368</string>
+    <string name="bur_email">office@bur-graz.at</string>
+    <string name="bur_address">Alte Poststraße 460–462</string>
+    <string name="bur_postcode">8020 Graz</string>
+    <string name="bur_website">www.burger-factory.at</string>
+    <string name="bur_description">BUR is a bar, restaurant and club - and one of the
+        hottest establishments Styria has to offer. Merging the traditional with the contemporary,
+        BUR offers a party atmosphere and serves exquisite cocktails and much more. Ideal for
+        events of any kind.</string>
+
+
+    <!--SIGHTS-->
+    <!--Schlossberg-->
+    <string name="schlossberg_name">Schlossberg</string>
+    <string name="schlossberg_address">Am Schlossberg</string>
+    <string name="schlossberg_postcode">8010 Graz</string>
+    <string name="schlossberg_description">In the city and on the summit – certainly no
+        contradiction in Graz. The river, unique historic city centre and, right in the middle,
+        a mountain. The Schlossberg hill of Graz is at once a natural spectacle, central recreation
+        area and vantage point. It takes but a short time to ascend and enjoy the beautiful views
+        of Graz and surroundings. The city owes its name to the castle, which was built more than
+        1000 years ago on this hill. From the Slavonic word Gradec for ‘little castle’ later
+        emerged Graz.</string>
+
+    <!--Island in The Mur-->
+    <string name="island_in_the_mur_names">Island in the Mur</string>
+    <string name="island_in_the_mur_telephone">+43/316/822660</string>
+    <string name="island_in_the_mur_email">murinsel@tele2.at</string>
+    <string name="island_in_the_mur_address">Lendkai 19</string>
+    <string name="island_in_the_mur_postcode">8020 Graz</string>
+    <string name="island_in_the_mur_website">www.murinselgraz.at</string>
+    <string name="island_in_the_mur_description">Island or boat? It isn’t easy to tell with this
+        extravagant steel construction by US-American artist Vito Acconci. The Island in the Mur,
+        Graz was commissioned as part of the city’s role as Capital of Culture in 2003. What is
+        clear is its function as a link between river and city, a wonderful place to drink coffee
+        or enjoy a cocktail. With the river Mur swirling cheerfully by on both left and right
+        sides, from the Murinsel you can appreciate a completely new perspective of the city
+        of Graz.</string>
+
+    <!--Kunsthaus Graz-->
+    <string name="kunsthaus_name">Kunsthaus Graz</string>
+    <string name="kunsthaus_telephone">+43/316/8017–9200</string>
+    <string name="kunsthaus_email">kunsthausgraz@museum-joanneum.at</string>
+    <string name="kunsthaus_address">Lendkai 1</string>
+    <string name="kunsthaus_postcode">8020 Graz</string>
+    <string name="kunsthaus_website">www.kunsthausgraz.at</string>
+    <string name="kunsthaus_description">Wonder, enthusiasm, incredulity. The spectacular architecture of
+        Graz Kunsthaus leaves nobody cold. Whilst it\’s not common for existing, traditional urban
+        buildings to sit so perfectly next to breathtaking new architecture, with the setting of
+        this museum of contemporary art in Graz it’s definitely the case. The Kunsthaus floats
+        like a mysterious blue balloon between the roofs of the historic city centre. Named
+        friendly alien by its creators, its fascinating magic draws visitors in.</string>
+
+    <!--Eggenberg Palace-->
+    <string name="eggenberg_palace_name">Eggenberg Palace</string>
+    <string name="eggenberg_palace_telephone">+43/316/8017–9560</string>
+    <string name="eggenberg_palace_email">eggenberg@museum-joanneum.at</string>
+    <string name="eggenberg_palace_address">Eggenberger Allee 90</string>
+    <string name="eggenberg_palace_postcode">8020 Graz</string>
+    <string name="eggenberg_palace_website">museum-joanneum.at/de/eggenberg_schloss</string>
+    <string name="eggenberg_palace_description">The universe is in Graz! It\’s no joke, but rather a wonderful
+        example of harmonious architectural skill: Eggenberg Palace on the edge of the city centre.
+        Set within a beautiful park is the main palace, which was laid out as an architectural
+        allegory of the universe. The building represents a precisely calculated cosmos. It was
+        commissioned by Prince Hans Ulrich von Eggenberg from the year 1625 to embody his wish for
+        a harmonious structure, reacting to the chaos of the 16th century.</string>
+
+
+    <!--PARKS-->
+    <!--Stadtpark-->
+    <string name="stadtpark_name">Stadtpark</string>
+    <string name="stadtpark_address">Stadtpark 1</string>
+    <string name="stadtpark_postcode">8010 Graz</string>
+    <string name="stadtpark_description">Who doesn\’t know the “Staedtchen Drumherum”
+        (The Little Town all around) by Mira Lobe? This is what you see, when you look at Graz
+        Stadtpark grounds from above. A green island in the middle of the roofscape of Unesco world
+        cultural heritage. During the day kids would storm the enormous playground next to
+        strollers and bon vivants settling comfortably underneath chestnut trees and on park
+        benches. In the afternoon and evening, Graz people love to meet here for an after-business
+        drink at one of the cafés. And should you happen to have some nuts in your pocket, you’ll
+        be able to make new friends amongst the park inhabitants – the local squirrels.</string>
+
+    <!--Burggarten-->
+    <string name="burggarten_names">Burggarten</string>
+    <string name="burggarten_address">Hofgasse 15</string>
+    <string name="burggarten_postcode">8010 Graz</string>
+    <string name="burggarten_description">A romantic picnic in the middle of town.
+        Burggarten park in Graz is a magical place for a plan like that. This picturesque park is
+        almost a secret spot, because who would have thought that, behind the seat of the regional
+        government above Stadtpark, so much romance is to be found? Another highlight here is the
+        former Orangerie which, following loving and extensive refurbishment, is now open for
+        events and receptions of all kinds.</string>
+
+    <!-->Botanical Garden-->
+    <string name="botanical_garden_name">Botanical Garden</string>
+    <string name="botanical_garden_telephone">+43/316/380–5651</string>
+    <string name="botanical_garden_email">jonathan.wilfling@uni-graz.at</string>
+    <string name="botanical_garden_address">Holtigasse 6</string>
+    <string name="botanical_garden_postcode">8010 Graz</string>
+    <string name="botanical_garden_website">www.garten.uni-graz.at</string>
+    <string name="botanical_garden_description">A trip up the garden path is a welcome diversion when it\’s
+        taking you to the Botanical Gardens at the Institute of Botany. The exotic architectural
+        design of the greenhouses is a perfect reflection of the extraordinary wealth of plants
+        to be found here – including three climate zones and a diversity of well known and lesser
+        known specimens.</string>
+
+    <!--Hilmteich-->
+    <string name="hilmteich_name">Hilmteich</string>
+    <string name="hilmteich_address">Hilmteichstraße 70</string>
+    <string name="hilmteich_postcode">8010 Graz</string>
+    <string name="hilmteich_website">www.holding-graz.at/freizeit/hilmteich.html</string>
+    <string name="hilmteich_description">What are your favourite activities? A romantic boat
+        trip followed by a picnic? Some cool climbing experience at Klettererlebnis im
+        Erlebnispark? Do you prefer a gentle walk or would you like to explore forest tracks in
+        running gear? Both Hilmteich lake and the adjoining Leechwald forest offer all sorts of
+        activities. Your individual relaxation and recreation is guaranteed – at the very latest
+        when stopping in at Purberg restaurant.</string>
+
+
+    <!-- HOTELS-->
+    <!--Das Weitzer-->
+    <string name="hotel_weitzer_name">Das Weitzer</string>
+    <string name="hotel_weitzer_telephone">+43/316/703–0</string>
+    <string name="hotel_weitzer_email">hotel@weitzer.com</string>
+    <string name="hotel_weitzer_address">Grieskai 12–16</string>
+    <string name="hotel_weitzer_postcode">8020 Graz</string>
+    <string name="hotel_weitzer_website">www.hotelweitzer.com</string>
+    <string name="hotel_weitzer_description">“Das Weitzer” is located in the city centre, just 5
+        minutes walk from the main square. All you would expect and more: 204 newly designed
+        rooms, the beautiful “Kingdom of Angels” breakfast room, regional produce including a
+        wine and gift shop in the “Steirer” restaurant, a florist, the “Café Weitzer” traditional
+        coffee house, together with a spa including sauna, steam room and work-out equipment. A
+        nice detail: guests can rent bicycles. Free WLAN throughout the building. </string>
+
+    <!--Hotel Daniel-->
+    <string name="hotel_daniel_names">Hotel Daniel</string>
+    <string name="hotel_daniel_telephone">+43/316/711080</string>
+    <string name="hotel_daniel_email">hellograz@hoteldaniel.com</string>
+    <string name="hotel_daniel_address">Europaplatz 1</string>
+    <string name="hotel_daniel_postcode">8020 Graz</string>
+    <string name="hotel_daniel_website">www.hoteldaniel.at</string>
+    <string name="hotel_daniel_description">"Urban Stay – Smart Luxury” is the credo at the
+        Daniel – tasteful minimalism and service that focuses on an uncomplicated sense of
+        well being. 108 rooms with free WLAN, air conditioning and rain shower. The best breakfast
+        in town every morning. 10 minutes’ walk into the city centre, bus and tram stops right in
+        front of the hotel. Or you can explore on the Vespas and bike boards available from the
+        in-house fleet.</string>
+
+    <!--Parkhotel Graz-->
+    <string name="parkhotel_graz_name">Parkhotel Graz</string>
+    <string name="parkhotel_graz_telephone">+43/316/3620–0</string>
+    <string name="parkhotel_graz_email">office@parkhotel-graz.at</string>
+    <string name="parkhotel_graz_address">Leonhardstraße 8</string>
+    <string name="parkhotel_graz_postcode">8010 Graz</string>
+    <string name="parkhotel_graz_website">www.parkhotel-graz.at</string>
+    <string name="parkhotel_graz_description">Centrally located yet in a tranquil environment the
+        Parkhotel Graz is the ideal choice for visitors of the Styrian capital. Business travellers
+        will find the convenience of the hotel´s own restaurant “Florian” as well as the cosy
+        cocktail bar. The hotel further boasts its own little Spa and various seminar rooms which
+        provide a quiet work environment – all you can wish for. On the other side this 4 Star
+        Superior hotel is the ideal home away from home for people looking for a place to stay at
+        during a romantic getaway.</string>
+
+    <!--Hotel Paradies-->
+    <string name="hotel_paradies_name">Hotel Paradies</string>
+    <string name="hotel_paradies_telephone">+43/316/282156</string>
+    <string name="hotel_paradies_email">info@hotelpardies.at</string>
+    <string name="hotel_paradies_address">Straßegangerstraße 380b</string>
+    <string name="hotel_paradies_postcode">8054 Graz</string>
+    <string name="hotel_paradies_website">www.hotelparadies.at</string>
+    <string name="hotel_paradies_description">Welcome to paradise! At the foot of Schloss St. Martin, with
+        excellent public transport connections to the centre of Graz, is the **** "Paradies".
+        The hotel indulges its guests with international cuisine in its restaurant and invites them
+        to relax on comfortable terraces enjoying a view of the lush landscape. Those keen on
+        sports will find a gym, tennis courts, outdoor pool, sauna and steam bath.</string>
+
+</resources>
