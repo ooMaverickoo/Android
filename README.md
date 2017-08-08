@@ -1,0 +1,124 @@
+# Android
+UdacityProjects
+
+
+Business Card
+Build a Single Screen App
+
+Project Overview
+
+To test your skills from this free course, design and implement a single screen app 
+that displays information about a fictional small business. Think along the lines of 
+your favorite coffeeshop, local restaurant, or that gem of a store that sells those 
+rare comic books or records.
+
+
+CounterApp
+Build a Court Counter App
+
+Project Overview
+
+This project is a chance for you to combine and practice everything you learned in this 
+section of the course. You will be making an app that allows a user to keep track of points within a game.
+The goal is to create an Score Keeper app which gives a user the ability to keep track of the score of two 
+different teams playing a game of your choice. To build this project, you can follow along with the practice 
+set and customize the Court Counter app to track scores from a different sport. 
+
+
+
+Quiz App
+Build a Quiz App
+
+Project Overview
+
+The Quiz App project is a chance for you to combine and practice everything you learned in this section of the course. 
+You will be making your own Android app - taking it from the idea stage to building out the full app. You can share your 
+app with family and friends, as well as with other students in this course.
+The goal is to create an educational app that quizzes a user about a certain topic of your choice. We want you to be creative
+about how you accomplish this. It’s up to you what the quiz questions will be about and how you want to present them to your 
+user. (We recommend about 5-10 quiz questions for a reasonable scope of your app).
+
+
+Report Card
+Build a Report Card
+
+Project Overview
+
+This project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You will 
+be making a class to represent a report card.
+The goal is to design and create the structure of a ReportCard Java Class which would allow a school to store a student’s grades for 
+a particular year. This project will be just a java class, rather than a full Android app.
+
+
+
+Musical Structure App
+Build a Musical Structure App
+
+Project Overview
+
+This project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You will 
+be making the structure of a music app using intents and empty activities.
+The goal is to design and create the structure of a Music app which would allow a user to play audio files. There are many music 
+player apps, and they make a wide variety of design choices. It will be your job to decide what kind of music app your structure 
+would turn into and build out that structure using intents. Will you build an app to play music from the user’s library of music? 
+Will you build an app to stream random songs from a database? Will you build a musical suggestion engine? Those choices are up to you! 
+
+
+
+Tour Guide App
+Build a Tour Guide App
+
+Project Overview
+
+The final project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You 
+will be making your own multi-screen Android app to share your knowledge about a city you are very familiar with.
+The goal is to create a tour guide app which presents relevant information to a user who’s visiting your city. The app can list top 
+attractions, restaurants, public places, or events for the city. It can contain all the best known secrets that only locals know. It’s 
+up to you which categories you want to provide, as well as what information to provide in each category. 
+
+
+Book Listing App
+Build a Book Listing App
+
+Project Overview
+
+This project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You will be 
+making an app that lists books.
+The goal is to design and create the structure of a Book Listing app which would allow a user to get a list of published books on a 
+given topic. You will be using the google books api in order to fetch results and display them to the user.
+
+
+News App
+Build a News App
+
+Project Overview
+
+The final project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You will
+be making your own app that connects to the Internet to provide news articles on a topic of your choice.
+The goal is to create a News feed app which gives a user regularly-updated news from the internet related to a particular topic, person,
+or location. The presentation of the information as well as the topic is up to you. 
+
+
+
+Habit Tracker App
+Build a Habit Tracker App
+
+Project Overview
+
+This project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You'll be setting 
+up and using the database schema for a simple habit tracking app.
+The goal is to design and create the structure of a Habit Tracking app which would allow a user to store and track their habits over 
+time. This project will not have any UI components; instead, you will focus on what happens behind the scenes, practicing how to design and 
+implement a simple database. 
+
+
+
+Inventory App
+Build an Inventory App
+
+Project Overview
+
+This project is a chance for you to combine and practice everything you learned in this section of the Nanodegree program. You will be making an app to track a store's inventory.
+
+The goal is to design and create the structure of an Inventory App which would allow a store to keep track of its inventory of products. The app will need to store information about price, quantity available, supplier, and a picture of the product. It will also need to allow the user to track sales and shipments and make it easy for the user to order more from the listed supplier.
+
